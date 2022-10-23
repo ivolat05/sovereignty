@@ -206,25 +206,50 @@
     						Пароль
     					</div>
     					<div class="profile-row">
-    						<div class="profile-box-info">
-    							*********************************
-    						</div>
-    						<button class="profile-btn">
+    						<input id="pwd-old" type="password" class="profile-box-info profile-blocked"
+    							value="*********************************">
+    						<button class="profile-btn profile-btn-pwd">
     							изменить
+    						</button>
+    					</div>
+    					<div class="profile-hide ">
+    						<div class="profile-subtitle">
+    							Введите текущий пароль
+    						</div>
+    						<input type="password" class="profile-box-info profile-pwd ">
+    						<div class="profile-subtitle">
+    							Введите новый пароль
+    						</div>
+    						<input id="password-new-1" type="password" class="profile-box-info profile-pwd-new profile-pwd">
+    						<div class="profile-subtitle">
+    							Повторите новый пароль
+    						</div>
+    						<div class="profile-row">
+    							<input id="password-new-2" type="password" class="profile-box-info profile-pwd-new profile-pwd">
+    							<div class="profile-error">
+    								Пароли не совпадают
+    							</div>
+    						</div>
+    						<button class="profile-hidden-close">
+    							Сохранить изменения
     						</button>
     					</div>
     					<div class="profile-subtitle">
     						О себе
     					</div>
     					<div class="profile-row">
-    						<div class="profile-box-info profile-box-info-two">
+    						<div id="profiler-edited" class="profiler-edited profile-box-info  profile-box-info-two">
     							Расскажите о своих компетенциях. Чем бы вы могли помочь проекту? Команда проекта имеет доступ к этой
     							информации и в случае, если вы нам будете полезны, мы свяжемся с вами.
     						</div>
-    						<button class="profile-btn">
+    						<button class="profile-btn profiler-edited-btn">
     							изменить
     						</button>
     					</div>
+    					<button class="profiler-edited-close">
+    						Сохранить изменения
+    					</button>
+    				
     				
     					<div class="profile-subtitle">
     						Telegram username

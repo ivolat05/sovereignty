@@ -70,3 +70,99 @@ function panelLeft() {
 }
 
 panelLeft()
+
+// проверка пороленй на совподение
+function pwd() {
+	let inp = document.querySelectorAll('.profile-pwd-new');
+	let btn = document.querySelector('.profile-hidden-close');
+
+
+	inp.forEach(item => {
+		item.addEventListener('input', () => {
+			let pwdOne = document.getElementById('password-new-1').value;
+			let pwdTwo = document.getElementById('password-new-2').value;
+			if (pwdOne === pwdTwo) {
+				inp.forEach(e => {
+					e.classList.remove('error')
+					e.classList.add('--good')
+					btn.classList.add('--active')
+				})
+			} else {
+				inp.forEach(e => {
+					e.classList.remove('--good')
+					e.classList.add('error')
+					btn.classList.remove('--active')
+				})
+			}
+		})
+	})
+}
+
+pwd()
+
+// сохранение нового пароля
+function newPwdSave() {
+	const btn = document.querySelector('.profile-hidden-close');
+	let pwd = document.getElementById('password-new-2');
+	const profileHide = document.querySelector('.profile-hide');
+	let pwdOld = document.getElementById('pwd-old');
+	let profileBtnPwd = document.querySelector('.profile-btn-pwd');
+	btn.addEventListener('click', () => {
+		pwdOld.value = pwd.value;
+		btn.classList.remove('--active')
+		profileHide.classList.remove('--active')
+		profileBtnPwd.innerHTML = 'изменить';
+		profileBtnPwd.classList.remove('--active');
+	})
+}
+newPwdSave()
+
+// активация изменения пароля
+function changePwdBlock() {
+	let profileBtnPwd = document.querySelector('.profile-btn-pwd');
+	const profileHide = document.querySelector('.profile-hide');
+	profileBtnPwd.addEventListener('click', () => {
+		if (!profileBtnPwd.classList.contains('--active')) {
+			profileBtnPwd.innerHTML = 'отмена';
+			profileHide.classList.add('--active');
+			profileBtnPwd.classList.add('--active');
+		} else {
+			profileBtnPwd.innerHTML = 'изменить';
+			profileHide.classList.remove('--active');
+			profileBtnPwd.classList.remove('--active');
+		}
+
+	})
+}
+changePwdBlock()
+
+// редактирование раздела о себе
+function profilerEdited() {
+	let btn = document.querySelector('.profiler-edited-btn');
+	let profilerEdited = document.getElementById('profiler-edited');
+	let profilerEditedClose = document.querySelector('.profiler-edited-close');
+	btn.addEventListener('click', () => {
+
+		if (btn.classList.contains('--active')) {
+			btn.classList.remove('--active')
+			profilerEditedClose.classList.remove('--active')
+			profilerEdited.contentEditable = false
+			btn.innerHTML = 'изменить'
+		} else {
+			btn.innerHTML = 'отмена'
+			btn.classList.add('--active')
+			profilerEditedClose.classList.add('--active')
+			profilerEdited.contentEditable = true
+		}
+
+	})
+	profilerEditedClose.addEventListener('click', () => {
+		if (btn.classList.contains('--active')) {
+			btn.classList.remove('--active')
+			profilerEditedClose.classList.remove('--active')
+			profilerEdited.contentEditable = false
+			btn.innerHTML = 'изменить'
+		}
+	})
+}
+profilerEdited()
