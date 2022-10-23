@@ -1078,6 +1078,156 @@ input[type="number"]::-webkit-inner-spin-button {
     min-height: 125px;
 }
 
+.document {
+    width: 500px;
+    margin-left: 67px;
+}
+
+.documetn-title {
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 28px;
+    color: #2E2E2E;
+    padding-bottom: 16px;
+}
+
+.documetn-text {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    color: #939393;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.document-panel-row {
+    padding-bottom: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+}
+
+.documetn-box {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 214px;
+    height: 74px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #BBBBBB;
+    margin-right: 17px;
+    border: 1px solid #0039A6;
+}
+
+.document-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #0039A6;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 147px;
+    height: 45px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.document-btn-two {
+    border: 2px solid #0039A6;
+    border-radius: 4px;
+    background: #fff;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #0039A6;
+}
+
+.documetn-box-two {
+    border: 1px solid #C8C8C8;
+}
+
+.document-panel-text {
+    max-width: 378px;
+    padding-bottom: 12px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #939393;
+}
+
+.document-panel-text + .document-panel-row {
+    padding-bottom: 12px;
+}
+
+.document-panel-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: #0039A6;
+}
+
+.documetn-box-three {
+    height: 111px;
+}
+
+.document-panel-text-2 {
+    padding-bottom: 24px;
+}
+
+.document-panel-text-2 + .document-panel-row {
+    padding-bottom: 24px;
+}
+
+.support-accordion.--deactive {
+    color: #BBBBBB;
+}
+
+.support-accordion.--deactive path {
+    stroke: #BBBBBB;
+}
+
+.support-accordion.--deactive.--active {
+    color: #0039A6;
+}
+
+.document-panel-text.--red {
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 15px;
+    color: #D03535;
+    padding-bottom: 17px;
+}
+
 .notif {
     max-width: 365px;
     position: absolute;
