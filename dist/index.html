@@ -63,55 +63,176 @@
     	<main class="main">
     		<div class="main-wrapp">
     			<div class="panel-left">
-    				<button class="panel-btn">
+    				<button class="panel-btn" data-panel="profile">
     					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
     					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
     					<span class="panel-btn-span">
     						Мой профиль
     					</span>
     				</button>
-    				<button class="panel-btn">
+    				<button class="panel-btn" data-panel="document">
     					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
     					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
     					<span class="panel-btn-span">
     						Мои документы
     					</span>
     				</button>
-    				<button class="panel-btn">
+    				<button class="panel-btn" data-panel="contribution">
     					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
     					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
     					<span class="panel-btn-span">
     						Мои взносы
     					</span>
     				</button>
-    				<button class="panel-btn">
+    				<button class="panel-btn" data-panel="assets">
     					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
     					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
     					<span class="panel-btn-span">
     						Мои активы
     					</span>
     				</button>
-    				<button class="panel-btn">
+    				<button class="panel-btn" data-panel="control">
     					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
     					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
     					<span class="panel-btn-span">
     						Управление
     					</span>
     				</button>
-    				<button class="panel-btn">
+    				<button class="panel-btn" data-panel="programs">
     					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
     					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
     					<span class="panel-btn-span">
     						Программы
     					</span>
     				</button>
-    				<button class="panel-btn panel-btn-end --active">
+    				<button class="panel-btn panel-btn-end --active" data-panel="support">
     					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
     					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
     					<span class="panel-btn-span">
     						Поддержка
     					</span>
     				</button>
+    			</div>
+    			<div class="panel-right">
+    				<div id="profile" class="profile panel">
+    				
+    				</div>
+    				<div id="document" class="document panel"></div>
+    				<div id="contribution" class="contribution panel"></div>
+    				<div id="assets" class="assets panel"></div>
+    				<div id="control" class="control panel"></div>
+    				<div id="programs" class="programs panel"></div>
+    				<div id="support" class="support panel --active">
+    					<div class="support-title">
+    						Поддержка пайщика
+    					</div>
+    					<div class="support-box-btn">
+    						<button class="support-btn --active" data-panel="support-1">
+    							Вопрос - Ответ
+    						</button>
+    						<button class="support-btn" data-panel="support-2">
+    							Начать чат
+    						</button>
+    					</div>
+    					<div class="support-wrapp">
+    						<div id="support-1" class="support-box  --active">
+    							<button class="support-accordion">
+    								Вопрос 1
+    								<img src="./assets/img/arrow.svg" alt="" class="support-accordion-img">
+    								<img src="./assets/img/arrow-2.svg" alt="" class="support-accordion-img-active">
+    							</button>
+    							<div class="support-panel">
+    								<div class="support-panel-text">
+    									Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1
+    									Ответ 1
+    									Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1 Ответ 1
+    									Ответ 1
+    									Ответ 1 Ответ 1 Ответ 1
+    								</div>
+    							</div>
+    							<button class="support-accordion">
+    								Вопрос 2
+    								<img src="./assets/img/arrow.svg" alt="" class="support-accordion-img">
+    								<img src="./assets/img/arrow-2.svg" alt="" class="support-accordion-img-active">
+    							</button>
+    							<div class="support-panel">
+    								<div class="support-panel-text">
+    									Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2
+    									Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2
+    									Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2
+    									Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2
+    									Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2 Ответ 2
+    								</div>
+    							</div>
+    							<button class="support-accordion">
+    								Вопрос 3
+    								<img src="./assets/img/arrow.svg" alt="" class="support-accordion-img">
+    								<img src="./assets/img/arrow-2.svg" alt="" class="support-accordion-img-active">
+    							</button>
+    							<div class="support-panel">
+    								<div class="support-panel-text">
+    									Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3
+    									Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3
+    									Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3 Ответ 3
+    								</div>
+    							</div>
+    							<button class="support-accordion">
+    								Вопрос 4
+    								<img src="./assets/img/arrow.svg" alt="" class="support-accordion-img">
+    								<img src="./assets/img/arrow-2.svg" alt="" class="support-accordion-img-active">
+    							</button>
+    							<div class="support-panel">
+    								<div class="support-panel-text">
+    									Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4
+    									Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4
+    									Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4
+    									Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4 Ответ 4
+    								</div>
+    							</div>
+    							<button class="support-accordion">
+    							</button>
+    							<div class="support-panel">
+    							</div>
+    							<button class="support-accordion">
+    							</button>
+    							<div class="support-panel">
+    							</div>
+    							<button class="support-accordion">
+    							</button>
+    							<div class="support-panel">
+    							</div>
+    							<button class="support-accordion">
+    							</button>
+    							<div class="support-panel">
+    							</div>
+    							<button class="support-accordion">
+    							</button>
+    							<div class="support-panel">
+    							</div>
+    							<button class="support-accordion">
+    							</button>
+    							<div class="support-panel">
+    							</div>
+    							<button class="support-accordion">
+    							</button>
+    							<div class="support-panel">
+    							</div>
+    							<button class="support-accordion">
+    							</button>
+    							<div class="support-panel">
+    							</div>
+    							<button class="support-accordion">
+    							</button>
+    				
+    						</div>
+    						<div id="support-2" class="support-box  ">
+    							<textarea class="support-textarea" placeholder="Напишите свой вопрос..."></textarea>
+    							<button type="submit" class="support-btn-text">
+    								Задать вопрос
+    							</button>
+    						</div>
+    					</div>
+    				</div>
     			</div>
     		</div>
     	</main>
