@@ -953,7 +953,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .profile-box-info-two + .profile-btn {
-    top: 81%;
+    bottom: 5%;
+    top: auto;
+    line-height: 15px;
 }
 
 .profile-row {
@@ -1072,7 +1074,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .profiler-edited {
-    min-height: 145px;
+    display: block;
+    min-height: 125px;
 }
 
 .notif {
