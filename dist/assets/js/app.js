@@ -20,7 +20,6 @@ function tabActive(button, panelTab, dataAtr) {
 }
 tabActive('.panel-btn', '.panel', 'data-panel');
 tabActive('.support-btn', '.support-box', 'data-panel');
-
 // аккордион
 function accordion(btnAccordion) {
 	const btn = document.querySelectorAll(`${btnAccordion}`);
@@ -37,3 +36,23 @@ function accordion(btnAccordion) {
 	})
 }
 accordion('.support-accordion');
+
+// закрытие окна уведомлений
+function closeNotif() {
+	const btn = document.querySelectorAll(`.close-notif`);
+	const panel = document.querySelector(`.notif`);
+	btn.forEach(item => {
+		item.addEventListener('click', () => {
+			const dataArr = item.getAttribute(`data-notif`);
+			const id = document.getElementById(dataArr);
+			btn.forEach(e => {
+				e.classList.toggle('--active');
+			})
+
+			panel.classList.toggle('--active');
+
+		})
+	})
+}
+
+closeNotif()

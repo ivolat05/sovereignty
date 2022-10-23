@@ -47,9 +47,10 @@
     					<img src="./assets/img/icon.svg" alt="" class="header-link-img">
     					Сделать взнос
     				</a>
-    				<a href="#" class="header-link">
+    				<button class="header-link close-notif" data-notif="notif">
     					<img src="./assets/img/icon-2.svg" alt="" class="header-link-img">
-    				</a>
+    					<img src="./assets/img/icon.svg" alt="" class="header-link-img-active">
+    				</button>
     				<button class="header-id">
     					<img src="./assets/img/icon-2.svg" alt="" class="header-link-img">
     					ID: <span class="header-id-num">
@@ -63,58 +64,58 @@
     	<main class="main">
     		<div class="main-wrapp">
     			<div class="panel-left">
-    				<button class="panel-btn" data-panel="profile">
-    					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
-    					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
-    					<span class="panel-btn-span">
-    						Мой профиль
-    					</span>
-    				</button>
-    				<button class="panel-btn" data-panel="document">
-    					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
-    					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
-    					<span class="panel-btn-span">
-    						Мои документы
-    					</span>
-    				</button>
-    				<button class="panel-btn" data-panel="contribution">
-    					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
-    					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
-    					<span class="panel-btn-span">
-    						Мои взносы
-    					</span>
-    				</button>
-    				<button class="panel-btn" data-panel="assets">
-    					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
-    					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
-    					<span class="panel-btn-span">
-    						Мои активы
-    					</span>
-    				</button>
-    				<button class="panel-btn" data-panel="control">
-    					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
-    					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
-    					<span class="panel-btn-span">
-    						Управление
-    					</span>
-    				</button>
-    				<button class="panel-btn" data-panel="programs">
-    					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
-    					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
-    					<span class="panel-btn-span">
-    						Программы
-    					</span>
-    				</button>
-    				<button class="panel-btn panel-btn-end --active" data-panel="support">
-    					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
-    					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
-    					<span class="panel-btn-span">
-    						Поддержка
-    					</span>
-    				</button>
+    			    <button class="panel-btn --active" data-panel="profile">
+    			        <img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
+    			        <img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
+    			        <span class="panel-btn-span">
+    			            Мой профиль
+    			        </span>
+    			    </button>
+    			    <button class="panel-btn" data-panel="document">
+    			        <img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
+    			        <img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
+    			        <span class="panel-btn-span">
+    			            Мои документы
+    			        </span>
+    			    </button>
+    			    <button class="panel-btn" data-panel="contribution">
+    			        <img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
+    			        <img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
+    			        <span class="panel-btn-span">
+    			            Мои взносы
+    			        </span>
+    			    </button>
+    			    <button class="panel-btn" data-panel="assets">
+    			        <img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
+    			        <img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
+    			        <span class="panel-btn-span">
+    			            Мои активы
+    			        </span>
+    			    </button>
+    			    <button class="panel-btn" data-panel="control">
+    			        <img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
+    			        <img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
+    			        <span class="panel-btn-span">
+    			            Управление
+    			        </span>
+    			    </button>
+    			    <button class="panel-btn" data-panel="programs">
+    			        <img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
+    			        <img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
+    			        <span class="panel-btn-span">
+    			            Программы
+    			        </span>
+    			    </button>
+    			    <button class="panel-btn panel-btn-end" data-panel="support">
+    			        <img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
+    			        <img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
+    			        <span class="panel-btn-span">
+    			            Поддержка
+    			        </span>
+    			    </button>
     			</div>
     			<div class="panel-right">
-    				<div id="profile" class="profile panel">
+    				<div id="profile" class="profile panel --active">
     				
     				</div>
     				<div id="document" class="document panel"></div>
@@ -122,7 +123,7 @@
     				<div id="assets" class="assets panel"></div>
     				<div id="control" class="control panel"></div>
     				<div id="programs" class="programs panel"></div>
-    				<div id="support" class="support panel --active">
+    				<div id="support" class="support panel">
     					<div class="support-title">
     						Поддержка пайщика
     					</div>
@@ -236,6 +237,148 @@
     			</div>
     		</div>
     	</main>
+    	<div id="notif" class="notif">
+    		<div class="notif-head">
+    			<div class="notif-head-coll">
+    				<div class="notif-head-title">
+    					Уведомления
+    				</div>
+    				<div class="notif-head-text">
+    					Личный кабинет
+    				</div>
+    			</div>
+    			<button class="notif-close close-notif">
+    				<img src="./assets/img/close.svg" alt="" class="notif-close-img">
+    			</button>
+    		</div>
+    		<div class="notif-row">
+    			<div class="notif-time-box">
+    				<div class="notif-time">
+    					12:00
+    				</div>
+    			</div>
+    			<div class="notif-row-text">
+    				Текст уведомления Текст уведомления Текст уведомления Текст уведомления
+    			</div>
+    		</div>
+    		<div class="notif-row">
+    			<div class="notif-time-box">
+    				<div class="notif-time">
+    					9:00
+    				</div>
+    			</div>
+    			<div class="notif-row-text">
+    				Текст уведомления Текст уведомления Текст уведомления Текст уведомления
+    			</div>
+    		</div>
+    		<div class="notif-row">
+    			<div class="notif-time-box">
+    				<div class="notif-time">
+    					12:00
+    				</div>
+    				<div class="notif-data">
+    					Вчера
+    				</div>
+    			</div>
+    			<div class="notif-row-text">
+    				Текст уведомления Текст уведомления
+    			</div>
+    		</div>
+    		<div class="notif-row">
+    			<div class="notif-time-box">
+    				<div class="notif-time">
+    					17:00
+    				</div>
+    				<div class="notif-data">
+    					11.10.2022
+    				</div>
+    			</div>
+    			<div class="notif-row-text">
+    				Текст уведомления Текст уведомления Текст уведомления Текст уведомления Текст уведомления Текст
+    				уведомления
+    				Текст уведомления Текст уведомления Текст уведомления Текст уведомления Текст уведомления Текст
+    				уведомления
+    			</div>
+    		</div>
+    		<div class="notif-row">
+    			<div class="notif-time-box">
+    				<div class="notif-time">
+    					12:00
+    				</div>
+    				<div class="notif-data">
+    					11.10.2022
+    				</div>
+    			</div>
+    			<div class="notif-row-text">
+    				Текст уведомления Текст уведомления Текст уведомления Текст уведомления
+    			</div>
+    		</div>
+    		<div class="notif-row">
+    			<div class="notif-time-box">
+    				<div class="notif-time">
+    					12:00
+    				</div>
+    				<div class="notif-data">
+    					11.10.2022
+    				</div>
+    			</div>
+    			<div class="notif-row-text">
+    				Текст уведомления Текст уведомления Текст уведомления Текст уведомления
+    			</div>
+    		</div>
+    		<div class="notif-row">
+    			<div class="notif-time-box">
+    				<div class="notif-time">
+    					12:00
+    				</div>
+    				<div class="notif-data">
+    					11.10.2022
+    				</div>
+    			</div>
+    			<div class="notif-row-text">
+    				Текст уведомления Текст уведомления Текст уведомления Текст уведомления
+    			</div>
+    		</div>
+    		<div class="notif-row">
+    			<div class="notif-time-box">
+    				<div class="notif-time">
+    					12:00
+    				</div>
+    				<div class="notif-data">
+    					11.10.2022
+    				</div>
+    			</div>
+    			<div class="notif-row-text">
+    				Текст уведомления Текст уведомления Текст уведомления Текст уведомления
+    			</div>
+    		</div>
+    		<div class="notif-row">
+    			<div class="notif-time-box">
+    				<div class="notif-time">
+    					12:00
+    				</div>
+    				<div class="notif-data">
+    					11.10.2022
+    				</div>
+    			</div>
+    			<div class="notif-row-text">
+    				Текст уведомления Текст уведомления Текст уведомления Текст уведомления
+    			</div>
+    		</div>
+    		<div class="notif-row">
+    			<div class="notif-time-box">
+    				<div class="notif-time">
+    					12:00
+    				</div>
+    				<div class="notif-data">
+    					11.10.2022
+    				</div>
+    			</div>
+    			<div class="notif-row-text">
+    				Текст уведомления Текст уведомления Текст уведомления Текст уведомления
+    			</div>
+    		</div>
+    	</div>
     </div>
     
 </body>
