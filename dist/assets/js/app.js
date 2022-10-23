@@ -38,12 +38,12 @@ function accordion(btnAccordion) {
 accordion('.support-accordion');
 
 // закрытие окна уведомлений
-function closeNotif() {
-	const btn = document.querySelectorAll(`.close-notif`);
-	const panel = document.querySelector(`.notif`);
+function closeNotif(button, box, data) {
+	const btn = document.querySelectorAll(`${button}`);
+	const panel = document.querySelector(`${box}`);
 	btn.forEach(item => {
 		item.addEventListener('click', () => {
-			const dataArr = item.getAttribute(`data-notif`);
+			const dataArr = item.getAttribute(`${data}`);
 			const id = document.getElementById(dataArr);
 			btn.forEach(e => {
 				e.classList.toggle('--active');
@@ -55,4 +55,18 @@ function closeNotif() {
 	})
 }
 
-closeNotif()
+closeNotif('.close-notif', '.notif', 'data-notif')
+closeNotif('.id-open', '.panel-id', ' data-id')
+
+// cкрытие боковой панели
+function panelLeft() {
+	const btn = document.querySelector('.header-btn');
+	const panelBtnSpan = document.querySelectorAll('.panel-btn');
+	btn.addEventListener('click', () => {
+		panelBtnSpan.forEach(item => {
+			item.classList.toggle('--deactive');
+		})
+	})
+}
+
+panelLeft()
