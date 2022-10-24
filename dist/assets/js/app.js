@@ -178,21 +178,46 @@ $(function () {
 	// popup
 	$('.open-modal').magnificPopup({
 		type: 'inline',
-		mainClass: 'mfp-fade'
+		mainClass: 'mfp-fade',
+		callbacks: {
+			open: function () {
+				const fon = document.querySelector('.fon');
+				if (fon) {
+					if (!fon.classList.contains('--active')) {
+						fon.classList.add('--active')
+					}
+
+				}
+			},
+			close: function () {
+				const fon = document.querySelector('.fon');
+				if (fon) {
+					if (fon.classList.contains('--active')) {
+						fon.classList.remove('--active')
+					}
+
+				}
+			}
+		}
 	});
 
 	//popup close
 	function closePopup(closeBtn) {
 		let popupClose = document.querySelectorAll(`.${closeBtn}`);
+
 		if (popupClose) {
 			popupClose.forEach((item) => {
 				item.addEventListener('click', () => {
 					$.magnificPopup.close();
 				})
 			})
+
+
 		}
 
 
 	}
 	closePopup('popup-close');
+
+
 })
