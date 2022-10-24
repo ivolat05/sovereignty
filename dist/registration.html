@@ -61,7 +61,7 @@
     								<div class="regist-title">
     									Номер телефона<span>*</span>
     								</div>
-    								<input type="text" class="regist-input" placeholder="+7 964 808 47 45">
+    								<input type="tel" class="regist-input mask-tell" placeholder="+7 964 808 47 45">
     							</div>
     						</div>
     						<div class="regist-title">
@@ -71,13 +71,14 @@
     						<div class="regist-title">
     							E-mail<span>*</span>
     						</div>
-    						<input type="text" class="regist-input" placeholder="myemail@yandex.ru">
+    						<input type="email" class="regist-input" placeholder="myemail@yandex.ru">
     						<div class="regist-title">
     							Пароль<span>*</span>
     						</div>
     						<div class="regist-input-wrapp">
-    							<input type="text" class="regist-input" placeholder="*********************************">
-    							<button class="regist-btn-eye">
+    							<input type="password" class="regist-input pasword-1"
+    								placeholder="*********************************">
+    							<button class="regist-btn-eye" data-password="pasword-1">
     								<svg width="25" height="17" viewBox="0 0 25 17" fill="none"
     									xmlns="http://www.w3.org/2000/svg">
     									<path
@@ -91,12 +92,13 @@
     							Повторите пароль<span>*</span>
     						</div>
     	
-    						<input type="text" class="regist-input" placeholder="*********************************">
+    						<input type="password" class="regist-input pasword-1"
+    							placeholder="*********************************">
     	
     						<div class="regist-title">
     							Telegram username <span class="span-two">(не обязательно)</span>
     						</div>
-    						<input type="text" class="regist-input" placeholder="@mytelegram_username">
+    						<input type="email" class="regist-input" placeholder="@mytelegram_username">
     						<button class="regist-button reg-btn-2" data-panel="reg-hiden-1">
     							Регистрация
     						</button>
@@ -123,15 +125,16 @@
     				<div id="regist-2" action="" class="regist-box">
     					<div class="regist-form --active">
     						<div class="regist-title">
-    							<E-mail></E-mail>
+    							E-mail
     						</div>
-    						<input type="text" class="regist-input" placeholder="myemail@yandex.ru">
+    						<input type="email" class="regist-input" placeholder="myemail@yandex.ru">
     						<div class="regist-title">
     							Пароль
     						</div>
     						<div class="regist-input-wrapp">
-    							<input type="text" class="regist-input --fix" placeholder="*********************************">
-    							<button class="regist-btn-eye">
+    							<input type="password" class="regist-input --fix pasword-2"
+    								placeholder="*********************************">
+    							<button class="regist-btn-eye" data-password="pasword-2">
     								<svg width="25" height="17" viewBox="0 0 25 17" fill="none"
     									xmlns="http://www.w3.org/2000/svg">
     									<path
@@ -159,7 +162,7 @@
     			<div class="regist-title">
     				Укажите ваш E-mail
     			</div>
-    			<input type="text" class="regist-input" placeholder="myemail@yandex.ru">
+    			<input type="email" class="regist-input" placeholder="myemail@yandex.ru">
     			<button class="regist-button reg-btn" data-panel="reg-2">
     				Восстановить пароль
     			</button>
