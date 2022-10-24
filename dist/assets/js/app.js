@@ -37,6 +37,7 @@ $(function () {
 	tabActive('.reg-btn-2', '.regist-hidden', 'data-panel');
 	tabActive('.entry-btn', '.regist-box', 'data-box');
 	tabActive('.entry-btn', '.regist-btn', 'data-tab');
+	tabActive('.entry-btn-2', '.regist-hidden', 'data-tabs');
 	// аккордион
 	function accordion(btnAccordion) {
 		const btn = document.querySelectorAll(`${btnAccordion}`);
