@@ -32,6 +32,7 @@ $(function () {
 	tabActive('.contribution-btn', '.contribution-box', 'data-panel');
 	tabActive('.assets-btn', '.assets-box', 'data-panel');
 	tabActive('.regist-btn', '.regist-box', 'data-panel');
+	tabActive('.recover-button', '.recover-hidden', 'data-panel');
 	// аккордион
 	function accordion(btnAccordion) {
 		const btn = document.querySelectorAll(`${btnAccordion}`);

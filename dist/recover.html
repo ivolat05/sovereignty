@@ -15,7 +15,7 @@
     
     
     
-    <title>404</title>
+    <title>Восстановление пароля</title>
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
@@ -38,12 +38,12 @@
     			<div class="regist-container-title">
     				Восстановление пароля
     			</div>
-    			<div class="recover-hidden">
+    			<div class="recover-hidden --active">
     				<div class="regist-title">
     					Введите новый пароль<span>*</span>
     				</div>
     				<div class="regist-input-wrapp">
-    					<input type="text" class="regist-input" placeholder="*********************************">
+    					<input type="password" class="regist-input" placeholder="*********************************">
     					<button class="regist-btn-eye">
     						<svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
     							<path
@@ -57,13 +57,13 @@
     					Повторите новый парол<span>*</span>
     				</div>
     	
-    				<input type="text" class="regist-input" placeholder="*********************************">
+    				<input type="password" class="regist-input" placeholder="*********************************">
     	
-    				<button class="recover-button">
+    				<button class="recover-button" data-panel="recover-1">
     					Сохранить новый пароль
     				</button>
     			</div>
-    			<div class="recover-hidden --active">
+    			<div id="recover-1" class="recover-hidden  ">
     				<div class="regist-container-text">
     					Новый пароль успешно сохранен. Теперь вы можете войти в свой личный кабинет.
     				</div>
