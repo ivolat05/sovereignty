@@ -681,6 +681,61 @@ input[type="number"]::-webkit-inner-spin-button {
     display: none;
 }
 
+.contribution-table-row {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.contribution-table-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.contribution-table-coll {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #515151;
+    text-align: left;
+}
+
+.contribution-table-coll:nth-child(1) {
+    width: 7%;
+}
+
+.contribution-table-coll:nth-child(2) {
+    width: 20%;
+}
+
+.contribution-table-coll:nth-child(3) {
+    width: 27%;
+}
+
+.contribution-table-coll:nth-child(4) {
+    width: 23%;
+}
+
+.contribution-table-coll:nth-child(5) {
+    width: 23%;
+}
+
+.contribution-table {
+    margin-bottom: 60px;
+}
+
 .support {
     width: 500px;
     margin-left: 64px;
