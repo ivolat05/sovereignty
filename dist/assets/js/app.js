@@ -20,6 +20,7 @@ function tabActive(button, panelTab, dataAtr) {
 }
 tabActive('.panel-btn', '.panel', 'data-panel');
 tabActive('.support-btn', '.support-box', 'data-panel');
+tabActive('.contribution-btn', '.contribution-box', 'data-panel');
 // аккордион
 function accordion(btnAccordion) {
 	const btn = document.querySelectorAll(`${btnAccordion}`);

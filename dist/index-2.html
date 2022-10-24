@@ -117,14 +117,14 @@
     						Мой профиль
     					</span>
     				</button>
-    				<button class="panel-btn --active" data-panel="document">
+    				<button class="panel-btn" data-panel="document">
     					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
     					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
     					<span class="panel-btn-span">
     						Мои документы
     					</span>
     				</button>
-    				<button class="panel-btn" data-panel="contribution">
+    				<button class="panel-btn --active" data-panel="contribution">
     					<img src="./assets/img/icon-3.svg" alt="" class="panel-btn-img">
     					<img src="./assets/img/icon-4.svg" alt="" class="panel-btn-img-active">
     					<span class="panel-btn-span">
@@ -258,7 +258,7 @@
     						@mytelegram_username
     					</div>
     				</div>
-    				<div id="document" class="document panel --active">
+    				<div id="document" class="document panel  ">
     					<div class="documetn-title">
     						Мои документы
     					</div>
@@ -372,7 +372,108 @@
     						</div>
     					</div>
     				</div>
-    				<div id="contribution" class="contribution panel"></div>
+    				<div id="contribution" class="contribution panel --active">
+    					<div class="contribution-title">
+    						Мои взносы и выплаты
+    					</div>
+    					<div class="contribution-box-btn">
+    						<button class="contribution-btn --active" data-panel="contribution-1">
+    							Сделать взнос
+    						</button>
+    						<button class="contribution-btn" data-panel="contribution-2">
+    							История взносов и выплат
+    						</button>
+    					</div>
+    					<div class="contribution-wrapp">
+    						<div id="contribution-1" class="contribution-box  --active">
+    							<div class="conrtibution-text --red">
+    								Сделайте свой первый взнос в НПК “Суверенитет”, чтобы завершить процесс вступления в организацию в
+    								качестве пайщика.
+    							</div>
+    							<div class="conrtibution-text ">
+    								Для того, чтобы сделать взнос в НПК “Суверенитет”, отправьте сумму от 600 рублей на рассчетный счет
+    								организации, используя реквизиты, указанные ниже.
+    							</div>
+    							<div class="conrtibution-text --red">
+    								В рамках вашего первого взноса, 100 рублей будут удержаны в качестве невозвратного вступительного
+    								взноса. Остальные средства будут направлены в паевой фонд в качестве возвратного паевого взноса.
+    							</div>
+    							<div class="conrtibution-wrapper">
+    								<div class="conrtibution-box">
+    									<div class="conrtibution-box-head">
+    										<div class="conrtibution-box-row">
+    											ИНН: <span class="conrtibution-box-info">0000000000</span>
+    										</div>
+    										<div class="conrtibution-box-row">
+    											Р/С: <span class="conrtibution-box-info">000000000000000000</span>
+    										</div>
+    										<div class="conrtibution-box-row">
+    											БИК: <span class="conrtibution-box-info">000000000</span>
+    										</div>
+    										<div class="conrtibution-box-row">
+    											Название: <span class="conrtibution-box-info">НПК Суверенитет</span>
+    										</div>
+    									</div>
+    									<div class="conrtibution-box-body">
+    										<div class="conrtibution-box-row">
+    											Ваш ID*: <span class="conrtibution-box-info">141119932301</span>
+    										</div>
+    										<div class="conrtibution-box-row --fix">
+    											Назначение платежа**: <span class="conrtibution-box-info"></span>
+    										</div>
+    										<div class="conrtibution-box-row">
+    											<span class="conrtibution-box-info">Взнос <span
+    													class="conrtibution-box-info-line">сумма</span> рублей</span>
+    										</div>
+    									</div>
+    								</div>
+    								<div class="conrtibution-box-img">
+    									<img src="./assets/img/qr.svg" alt="" class="conrtibution-img-qr">
+    									<div class="conrtibution-qr-text">
+    										QR-код реквизитов для взносов в НПК Суверенитет
+    									</div>
+    								</div>
+    							</div>
+    							<div class="conrtibution-subtext ">
+    								*Ввод вашего персонального ID при совершении платежа обязателен. Если ID не будет указан - ваш платеж не
+    								будет ассоциирован с вашим аккаунтом и отправится в резервный фонд организации в качестве вашего
+    								персонального благотворительного взноса.
+    							</div>
+    							<div class="conrtibution-subtext ">
+    								** Ели ваш совокупный взнос составляет 600 рублей, внесите в поле “назначение платежа” фразу “Взнос 600
+    								рублей”. Если взнос составляет 5000 рублей, введите фразу “Взнос 5000 рублей”. Правило актуально для
+    								любых сумм.
+    							</div>
+    							<div class="conrtibution-text --blue">
+    								Согласно уставу НПК “Суверенитет” ежемесячный членский (невозвратный) взнос составляет 100 рублей в
+    								месяц. Эти средства направляются на деятельность организации, резервный фонд, а также другие целевые
+    								фонды по решению общего собрания пайщиков в интересах пайщиков. Членский взнос удерживается из
+    								совокупных взносов автоматически из рассчета 100 рублей в месяц.
+    							</div>
+    							<div class="conrtibution-row">
+    								<div class="conrtibution-row-coll">
+    									<div class="conrtibution-row-head">
+    										100 Р/мес
+    									</div>
+    									<div class="conrtibution-row-body">
+    										Ежемесячный членский взнос
+    									</div>
+    								</div>
+    								<div class="conrtibution-row-coll-2">
+    									<div class="conrtibution-row-head --blue">
+    										Вся остальная сумма совокупных взносов за месяц
+    									</div>
+    									<div class="conrtibution-row-body --blue">
+    										Возвратный паевой взнос на реализацию <br> целевых программ
+    									</div>
+    								</div>
+    							</div>
+    						</div>
+    						<div id="contribution-2" class="contribution-box  ">
+    				
+    						</div>
+    					</div>
+    				</div>
     				<div id="assets" class="assets panel"></div>
     				<div id="control" class="control panel"></div>
     				<div id="programs" class="programs panel"></div>
