@@ -15,7 +15,7 @@
     
     
     
-    <title>404</title>
+    <title>регистрации</title>
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
@@ -34,7 +34,7 @@
     		</div>
     	</header>
     	<div class="regist">
-    		<div class="regist-wrapp">
+    		<div class="regist-wrapp  --active">
     			<div class="regist-box-btn">
     				<button class="regist-btn --active" data-panel="regist-1">
     					Регистрация
@@ -45,7 +45,7 @@
     			</div>
     			<div class="regist-container">
     				<div id="regist-1" action="/" class="regist-box --active">
-    					<form class="regist-form --active" action="/">
+    					<div class="regist-form regist-hidden --active">
     						<div class="regist-title">
     							ФИО<span>*</span>
     						</div>
@@ -100,10 +100,28 @@
     						<button class="regist-button">
     							Регистрация
     						</button>
-    					</form>
+    					</div>
+    					<div class="regist-hidden">
+    						<div class="regist-container-text">
+    							Для завершения регистрации перейдите по ссылке, указанной в письме, которое мы выслали вам на
+    							электронную почту mymail@yandex.ru
+    						</div>
+    						<button class="regist-button">
+    							Готово
+    						</button>
+    					</div>
+    					<div class="regist-hidden">
+    						<div class="regist-container-text">
+    							Регистрация завершена. Адрес электронной почты успешно подтвержден. Теперь вы можете войти в
+    							свой личный кабинет.
+    						</div>
+    						<button class="regist-button">
+    							Войти
+    						</button>
+    					</div>
     				</div>
     				<div id="regist-2" action="" class="regist-box">
-    					<form class="regist-form --active" action="/">
+    					<div class="regist-form --active">
     						<div class="regist-title">
     							<E-mail></E-mail>
     						</div>
@@ -129,10 +147,39 @@
     						<button class="regist-button --fix">
     							Вход
     						</button>
-    					</form>
+    					</div>
     				</div>
     	
     			</div>
+    		</div>
+    		<div class="regist-wrapp">
+    			<div class="regist-container-title">
+    				Восстановление пароля
+    			</div>
+    			<div class="regist-title">
+    				Укажите ваш E-mail
+    			</div>
+    			<input type="text" class="regist-input" placeholder="myemail@yandex.ru">
+    			<button class="regist-button">
+    				Восстановить пароль
+    			</button>
+    			<div class="regist-container-text --two">
+    				На адрес вашей электронной почты будет выслано письмо со ссылкой на страницу восстановления пароля.
+    			</div>
+    	
+    		</div>
+    		<div class="regist-wrapp  ">
+    			<div class="regist-container-title --two">
+    				Восстановление пароля
+    			</div>
+    	
+    	
+    			<div class="regist-container-text">
+    				На адрес вашей электронной почты выслано письмо со ссылкой на страницу восстановления пароля.
+    			</div>
+    			<button class="regist-button --two">
+    				Готово
+    			</button>
     		</div>
     	</div>
     </div>
