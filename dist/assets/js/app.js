@@ -33,6 +33,10 @@ $(function () {
 	tabActive('.assets-btn', '.assets-box', 'data-panel');
 	tabActive('.regist-btn', '.regist-box', 'data-panel');
 	tabActive('.recover-button', '.recover-hidden', 'data-panel');
+	tabActive('.reg-btn', '.regist-wrapp', 'data-panel');
+	tabActive('.reg-btn-2', '.regist-hidden', 'data-panel');
+	tabActive('.entry-btn', '.regist-box', 'data-box');
+	tabActive('.entry-btn', '.regist-btn', 'data-tab');
 	// аккордион
 	function accordion(btnAccordion) {
 		const btn = document.querySelectorAll(`${btnAccordion}`);

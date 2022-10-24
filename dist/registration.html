@@ -34,7 +34,7 @@
     		</div>
     	</header>
     	<div class="regist">
-    		<div class="regist-wrapp  --active">
+    		<div id="reg-3" class="regist-wrapp  --active">
     			<div class="regist-box-btn">
     				<button class="regist-btn --active" data-panel="regist-1">
     					Регистрация
@@ -45,7 +45,7 @@
     			</div>
     			<div class="regist-container">
     				<div id="regist-1" action="/" class="regist-box --active">
-    					<div class="regist-form regist-hidden --active">
+    					<div id="reg-hiden-2" class="regist-form regist-hidden --active">
     						<div class="regist-title">
     							ФИО<span>*</span>
     						</div>
@@ -97,16 +97,16 @@
     							Telegram username <span class="span-two">(не обязательно)</span>
     						</div>
     						<input type="text" class="regist-input" placeholder="@mytelegram_username">
-    						<button class="regist-button">
+    						<button class="regist-button reg-btn-2" data-panel="reg-hiden-1">
     							Регистрация
     						</button>
     					</div>
-    					<div class="regist-hidden">
+    					<div id="reg-hiden-1" class="regist-hidden">
     						<div class="regist-container-text">
     							Для завершения регистрации перейдите по ссылке, указанной в письме, которое мы выслали вам на
     							электронную почту mymail@yandex.ru
     						</div>
-    						<button class="regist-button">
+    						<button class="regist-button reg-btn-2" data-panel="reg-hiden-2">
     							Готово
     						</button>
     					</div>
@@ -141,7 +141,7 @@
     								</svg>
     							</button>
     						</div>
-    						<button class="regist-btn-pwd">
+    						<button class="regist-btn-pwd reg-btn" data-panel="reg-1">
     							Забыли пароль?
     						</button>
     						<button class="regist-button --fix">
@@ -152,7 +152,7 @@
     	
     			</div>
     		</div>
-    		<div class="regist-wrapp">
+    		<div id="reg-1" class="regist-wrapp">
     			<div class="regist-container-title">
     				Восстановление пароля
     			</div>
@@ -160,7 +160,7 @@
     				Укажите ваш E-mail
     			</div>
     			<input type="text" class="regist-input" placeholder="myemail@yandex.ru">
-    			<button class="regist-button">
+    			<button class="regist-button reg-btn" data-panel="reg-2">
     				Восстановить пароль
     			</button>
     			<div class="regist-container-text --two">
@@ -168,7 +168,7 @@
     			</div>
     	
     		</div>
-    		<div class="regist-wrapp  ">
+    		<div id="reg-2" class="regist-wrapp  ">
     			<div class="regist-container-title --two">
     				Восстановление пароля
     			</div>
@@ -177,7 +177,7 @@
     			<div class="regist-container-text">
     				На адрес вашей электронной почты выслано письмо со ссылкой на страницу восстановления пароля.
     			</div>
-    			<button class="regist-button --two">
+    			<button class="regist-button --two reg-btn" data-panel="reg-3">
     				Готово
     			</button>
     		</div>
