@@ -69,8 +69,8 @@ $(function () {
 		if (btn) {
 			btn.forEach(item => {
 				item.addEventListener('click', () => {
-					const dataArr = item.getAttribute(`${data}`);
-					const id = document.getElementById(dataArr);
+
+
 					btn.forEach(e => {
 						e.classList.toggle('--active');
 					})
@@ -82,18 +82,25 @@ $(function () {
 		}
 	}
 
-	closeNotif('.close-notif', '.notif', 'data-notif')
-	closeNotif('.id-open', '.panel-id', ' data-id')
+	closeNotif('.close-notif', '.notif',)
+	closeNotif('.id-open', '.panel-id',)
 
 	// cкрытие боковой панели
 	function panelLeft() {
 		const btn = document.querySelector('.header-btn');
 		const panelBtnSpan = document.querySelectorAll('.panel-btn');
+		const header = document.querySelector('.header-wrapp');
+		const panelLeft = document.querySelector('.panel-left');
+		const body = document.querySelector('body')
 		if (btn) {
 			btn.addEventListener('click', () => {
 				panelBtnSpan.forEach(item => {
 					item.classList.toggle('--deactive');
 				})
+				header.classList.toggle('--active');
+				panelLeft.classList.toggle('--active');
+				btn.classList.toggle('--active');
+				body.classList.toggle('--stop');
 			})
 		}
 	}
