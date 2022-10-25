@@ -102,6 +102,15 @@ $(function () {
 				btn.classList.toggle('--active');
 				body.classList.toggle('--stop');
 			})
+			panelBtnSpan.forEach(event => {
+				event.addEventListener('click', () => {
+
+					header.classList.toggle('--active');
+					panelLeft.classList.toggle('--active');
+					btn.classList.toggle('--active');
+					body.classList.toggle('--stop');
+				})
+			})
 		}
 	}
 

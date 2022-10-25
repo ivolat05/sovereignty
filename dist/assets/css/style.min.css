@@ -3468,6 +3468,151 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
+@media (max-width: 650px) {
+    .document {
+        width: 100%;
+    }
+}
+
+@media (max-width: 360px) {
+    .documetn-box {
+        width: 175px;
+        margin-right: 10px;
+    }
+}
+
+
+@media (max-width: 1030px) {
+    .contribution {
+        width: 500px;
+    }
+}
+
+@media (max-width: 823px) {
+    .contribution {
+        width: auto;
+        max-width: 350px;
+    }
+
+    .conrtibution-wrapper {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    .conrtibution-box {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 668px) {
+    .contribution {
+        width: auto;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 350px) {
+    .contribution-btn,
+  .contribution-btn.--active {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .popup {
+        width: 99%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .popup-head-title {
+        font-size: 17px;
+        line-height: 22px;
+    }
+}
+
+
+@media (max-width: 1030px) {
+    .assets {
+        width: 500px;
+    }
+}
+
+@media (max-width: 810px) {
+    .assets {
+        width: 360px;
+    }
+
+    .assets-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .assets-head-coll {
+        font-size: 30px;
+    }
+
+    .assets-box-title {
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .assets-link {
+        margin-left: 10px;
+    }
+
+    .assets-footer-title {
+        font-size: 12px;
+    }
+
+    .assets-footer-title span {
+        font-size: 12px;
+    }
+
+    .assets-box-head {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 668px) {
+    .assets {
+        width: 360px;
+    }
+
+    .assets-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .assets {
+        width: 100%;
+    }
+
+    .assets-title {
+        font-size: 22px;
+    }
+
+    .assets-head-box {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+    }
+
+    .assets-box-title {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .assets-container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
 input[type="password"] {
     font-family: "fontello";
     font-style: normal;
