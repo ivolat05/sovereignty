@@ -3637,6 +3637,51 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
+
+@media (max-width: 500px) {
+    .regist-wrapp,
+  .recover-wrapp {
+        width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .regist {
+        padding-top: 177px;
+    }
+
+    .regist-btn {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .regist-btn.--active {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .regist-title {
+        padding-left: 16px;
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .regist-btn-pwd {
+        font-size: 10px;
+        line-height: 13px;
+        margin-right: 38px;
+    }
+
+    .regist-btn-eye {
+        right: 30px;
+    }
+
+    .regist-btn-eye svg {
+        width: 19px;
+        height: 14px;
+    }
+}
+
 input[type="password"] {
     font-family: "fontello";
     font-style: normal;
