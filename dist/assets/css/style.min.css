@@ -3613,6 +3613,30 @@ input[type="number"]::-webkit-inner-spin-button {
     }
 }
 
+
+@media (max-width: 572px) {
+    .error-img {
+        width: 90%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+
+    .error-text {
+        font-size: 7.5vw;
+        padding-bottom: 24px;
+    }
+
+    .error-link {
+        width: 90%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .header-coll.--two {
+        padding-left: 45px;
+    }
+}
+
 input[type="password"] {
     font-family: "fontello";
     font-style: normal;
